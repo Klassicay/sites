@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Walters Chiropractic | Chiropractor in Mt Vernon, MO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1c3530; --deep:#12241f; --water:#2c7a68; --mist:#e9f3ef;
+  --signal:#f3c24f; --white:#fff; --slate:#4c5b6e; --line:#d5dfea;
+  --display:'Barlow Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif;
+  --body:'Barlow','Helvetica Neue',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:17px;line-height:1.5;color:var(--navy);background:var(--white);padding-bottom:72px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.preview{background:#000;color:#fff;font-size:13px;text-align:center;padding:8px 16px}
+
+.top{background:var(--deep);color:#fff}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px}
+.logo{font-family:var(--display);font-weight:800;font-size:26px;line-height:1;letter-spacing:.3px;text-decoration:none}
+.logo small{display:block;font-family:var(--body);font-weight:500;font-size:13px;color:#9fb4cc;margin-top:4px;letter-spacing:0}
+.toplinks{display:flex;align-items:center;gap:22px;font-weight:500;font-size:16px}
+.toplinks a{text-decoration:none}
+.toplinks .nav{display:none}
+.call{background:var(--signal);color:var(--deep);font-weight:600;padding:10px 16px;border-radius:4px;white-space:nowrap}
+
+.hero{background:linear-gradient(180deg,rgba(28,53,48,.90),rgba(28,53,48,.97)),url('https://d8j0ntlcm91z4.cloudfront.net/user_3FmjYQ9qvfG6odoSEVN5gIgNxDe/hf_20261115_022528_2149bddd-2949-4ef1-bf11-5858c0f5783a.png') center/cover no-repeat var(--navy);color:#fff;position:relative;overflow:hidden}
+.pipe{position:absolute;right:-40px;top:0;height:100%;width:min(62%,640px);opacity:.5;pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:34px;padding-top:46px;padding-bottom:54px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(52px,13vw,104px);line-height:.92;letter-spacing:-.5px;max-width:9ch}
+.hero p.lede{font-size:19px;color:#c9d7e6;max-width:34ch;margin-top:20px}
+.stars{display:flex;align-items:center;gap:10px;margin-top:26px;font-weight:500;color:#fff;text-decoration:none}
+.stars svg{width:108px;height:20px;flex:none}
+.stars u{text-underline-offset:3px}
+
+.request{background:#fff;color:var(--navy);border-radius:6px;padding:24px 22px 22px;box-shadow:0 18px 40px rgba(4,12,24,.45)}
+.request h2{font-family:var(--display);font-weight:700;font-size:30px;line-height:1.05;margin-bottom:6px}
+.request p{color:var(--slate);font-size:16px;margin-bottom:16px}
+fieldset{border:0;margin-bottom:16px}
+legend{font-weight:600;font-size:15px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0}
+.chips span{display:block;border:1.5px solid var(--line);border-radius:999px;padding:8px 14px;font-weight:500;font-size:16px;cursor:pointer}
+.chips input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--water);outline-offset:2px}
+.field{display:block;margin-bottom:12px}
+.field b{display:block;font-weight:600;font-size:15px;margin-bottom:5px}
+.field input{width:100%;font:inherit;padding:12px 13px;border:1.5px solid var(--line);border-radius:4px;color:var(--navy)}
+.field input:focus{outline:none;border-color:var(--water);box-shadow:0 0 0 3px rgba(43,123,214,.2)}
+button.send{width:100%;font:600 18px var(--body);background:var(--signal);color:var(--deep);border:0;border-radius:4px;padding:15px;cursor:pointer;margin-top:4px}
+button.send:hover{background:#ffd666}
+.sent{display:none;background:var(--mist);border-left:4px solid var(--water);padding:14px 16px;border-radius:4px}
+.sent b{display:block;font-size:18px;margin-bottom:3px}
+.request.done form{display:none}
+.request.done .sent{display:block}
+
+.jobs{padding:60px 0 20px}
+h2.big{font-family:var(--display);font-weight:800;font-size:clamp(38px,8vw,60px);line-height:.98;max-width:14ch;margin-bottom:26px}
+.job{display:grid;gap:12px;padding:22px 0;border-top:2px solid var(--navy)}
+.job img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;display:block;background:var(--mist)}
+.job h3{margin-bottom:6px}
+.shot{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;display:block;background:#d5dfea;margin-bottom:30px}
+.job:last-child{border-bottom:2px solid var(--navy)}
+.job h3{font-family:var(--display);font-weight:700;font-size:32px;line-height:1}
+.job p{color:var(--slate);max-width:52ch}
+.job a{font-weight:600;color:var(--water);text-underline-offset:3px;justify-self:start}
+
+.steps{background:var(--mist);margin-top:56px;padding:56px 0}
+.steps ol{list-style:none;display:grid;gap:26px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;gap:4px 14px;align-items:start}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:800;font-size:62px;line-height:.8;color:var(--water);grid-row:span 2}
+.steps h3{font-family:var(--display);font-weight:700;font-size:27px;line-height:1.05}
+.steps p{color:var(--slate)}
+
+.find{background:var(--deep);color:#fff;padding:60px 0}
+.find .wrap{display:grid;gap:30px}
+.find h2.big{margin-bottom:14px}
+.find .num{font-family:var(--display);font-weight:800;font-size:clamp(46px,12vw,84px);line-height:1;color:var(--signal);text-decoration:none;display:inline-block}
+.find address{font-style:normal;font-size:19px;color:#c9d7e6;line-height:1.5}
+.find address a{color:#fff;font-weight:500;text-underline-offset:3px}
+footer{background:var(--deep);color:#8298b1;font-size:14px;padding:0 0 26px}
+footer .wrap{border-top:1px solid #20324a;padding-top:18px}
+
+.dock{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 12px;background:rgba(10,23,40,.96);z-index:5}
+.dock a{text-align:center;text-decoration:none;font-weight:600;padding:13px 8px;border-radius:4px}
+.dock .c{background:var(--signal);color:var(--deep)}
+.dock .r{color:#fff;border:1.5px solid #5b728d}
+
+@media (min-width:860px){
+  body{padding-bottom:0}
+  .dock{display:none}
+  .toplinks .nav{display:inline}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center;gap:56px;padding-top:76px;padding-bottom:84px}
+  .hero{background-image:linear-gradient(90deg,rgba(28,53,48,.97) 0%,rgba(28,53,48,.88) 45%,rgba(28,53,48,.5) 100%),url('https://d8j0ntlcm91z4.cloudfront.net/user_3FmjYQ9qvfG6odoSEVN5gIgNxDe/hf_20261115_022528_2149bddd-2949-4ef1-bf11-5858c0f5783a.png')}
+  .job{grid-template-columns:260px 1fr auto;align-items:center;gap:32px;padding:26px 0}
+  .job img{aspect-ratio:4/3}
+  .steps .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:0 56px;align-items:center}
+  .steps h2.big{grid-column:2}
+  .shot{grid-row:1/3;margin:0}
+  .steps ol{grid-column:2}
+  
+  .find .wrap{grid-template-columns:1.2fr .8fr;align-items:end}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="preview">Preview draft prepared for Walters Chiropractic. Not published and hidden from search engines.</div>
+<div class="top"><div class="wrap">
+  <a class="logo" href="#top">Walters Chiropractic<small>Chiropractic care, Mt Vernon MO</small></a>
+  <div class="toplinks">
+    <a class="nav" href="#jobs">What we do</a>
+    <a class="nav" href="#find">Find us</a>
+    <a class="call" href="tel:+14174611155">(417) 461-1155</a>
+  </div>
+</div></div>
+<div class="hero" id="top"><div class="wrap">
+  <div>
+    <h1>Back or neck pain? Come and see us.</h1>
+    <p class="lede">Chiropractic care for Mt Vernon and the surrounding area. Call the office or leave your number and we will find you a time.</p>
+    <a class="stars" href="https://www.google.com/maps/place/?q=place_id:ChIJiSRaWtityIcRM-na7ke5nhY">
+      <svg viewBox="0 0 108 20" aria-hidden="true"><g fill="#f3c24f"><path id="s" d="M10 1l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 14.5 4.6 17.5l1.2-6L1.3 7.3l6.1-.7z"/><use href="#s" x="22"/><use href="#s" x="44"/><use href="#s" x="66"/><use href="#s" x="88"/></g></svg>
+      <span>5.0 from <u>560+ Google reviews</u></span>
+    </a>
+  </div>
+  <div class="request" id="request">
+    <form id="rq">
+      <h2>Request an appointment</h2>
+      <p>Leave your number and the front desk will call you to book.</p>
+      <fieldset><legend>What is the visit for?</legend><div class="chips"><label><input type="radio" name="job" value="Back or neck pain" checked><span>Back or neck pain</span></label><label><input type="radio" name="job" value="Acupuncture"><span>Acupuncture</span></label><label><input type="radio" name="job" value="I am a new patient"><span>I am a new patient</span></label><label><input type="radio" name="job" value="Something else"><span>Something else</span></label></div></fieldset>
+      <label class="field"><b>Your name</b><input name="name" autocomplete="name" required></label>
+      <label class="field"><b>Phone number</b><input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+      <button class="send" type="submit">Request an appointment</button>
+    </form>
+    <div class="sent" role="status" aria-live="polite"><b>Appointment requested</b><span id="sentmsg"></span></div>
+  </div>
+</div></div>
+<section class="jobs" id="jobs"><div class="wrap">
+  <h2 class="big">How we can help</h2>
+  <div class="job"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3FmjYQ9qvfG6odoSEVN5gIgNxDe/hf_20261115_022529_e0491be5-c12c-414a-8e14-05276849f944.png" alt="A chiropractor&#x27;s hands supporting a patient&#x27;s back" loading="lazy"><div><h3>Chiropractic care</h3><p>Hands-on care for your back, neck and joints, from a first visit through to ongoing treatment.</p></div><a href="#request" data-job="Back or neck pain">Ask about a visit</a></div><div class="job"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3FmjYQ9qvfG6odoSEVN5gIgNxDe/hf_20261115_022528_2149bddd-2949-4ef1-bf11-5858c0f5783a.png" alt="A calm treatment room" loading="lazy"><div><h3>Acupuncture</h3><p>Offered in the same office, so your care stays in one place.</p></div><a href="#request" data-job="Acupuncture">Ask about acupuncture</a></div><div class="job"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3FmjYQ9qvfG6odoSEVN5gIgNxDe/hf_20261115_022529_27a02a65-30df-4ef3-bda6-4fd8ab9f4888.png" alt="A bright clinic reception area" loading="lazy"><div><h3>New patients</h3><p>New to the practice? The front desk will walk you through a first appointment.</p></div><a href="#request" data-job="I am a new patient">Book a first visit</a></div>
+</div></section>
+<section class="steps"><div class="wrap">
+  <img class="shot" src="https://d8j0ntlcm91z4.cloudfront.net/user_3FmjYQ9qvfG6odoSEVN5gIgNxDe/hf_20261115_022529_27a02a65-30df-4ef3-bda6-4fd8ab9f4888.png" alt="A bright clinic reception area" loading="lazy">
+  <h2 class="big">How a first visit goes</h2>
+  <ol><li><h3>You call or request an appointment</h3><p>Tell the front desk what has been bothering you.</p></li><li><h3>We find you a time</h3><p>The office calls you back to book your visit.</p></li><li><h3>You come in</h3><p>We look at what is going on and talk through your care.</p></li></ol>
+</div></section>
+<section class="find" id="find"><div class="wrap">
+  <div><h2 class="big">Call the office</h2><a class="num" href="tel:+14174611155">(417) 461-1155</a></div>
+  <address>Walters Chiropractic<br>316 W Mt Vernon Blvd<br>Mt Vernon, MO 65712<br><a href="https://www.google.com/maps/place/?q=place_id:ChIJiSRaWtityIcRM-na7ke5nhY">Open in Google Maps</a></address>
+</div></section>
+<footer><div class="wrap">&copy; Walters Chiropractic. Mt Vernon, MO.</div></footer>
+<div class="dock"><a class="c" href="tel:+14174611155">Call the office</a><a class="r" href="#request">Request an appointment</a></div>
+<script>
+(function(){
+  var box=document.getElementById('request'),form=document.getElementById('rq');
+  document.querySelectorAll('[data-job]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var r=Array.prototype.find.call(form.querySelectorAll('input[name=job]'),function(i){return i.value===a.dataset.job}); if(r) r.checked=true;
+    });
+  });
+  form.addEventListener('submit',function(e){
+    e.preventDefault(); var d=new FormData(form);
+    document.getElementById('sentmsg').textContent='Thanks, '+d.get('name')+'. We will call '+d.get('phone')+' about: '+d.get('job').toLowerCase()+'. (Preview: on the live site this request is emailed to the business.)';
+    box.classList.add('done');
+  });
+})();
+</script>
+</body>
+</html>
